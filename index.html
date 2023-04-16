@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <script defer src="js/swiper-bundle.js"></script>
+    <script defer src="js/main.js"></script>
+    <title>Auto-school</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <input type="checkbox" id="menu__toggle">
+                <label for="menu__toggle" class="menu__btn">
+                        <span></span>
+                    </label>
+                    <nav class="menu__body">
+                        <ul>
+                        <li><a data-goto=".gallery" href="#" class="menu__link">Ціни та категорії</a></li>
+                        <li><a data-goto=".stages" href="#" class="menu__link">Етапи отримання</a></li>
+                        <li><a data-goto=".faq" href="#" class="menu__link">FAQ</a></li>
+                        <li><a data-goto=".reviews" href="#" class="menu__link">Відгуки</a></li>
+                        <li><a data-goto=".feedbac" href="#" class="menu__link">Зв`язатися з нами</a></li>
+                        </ul>
+                    </nav>
+                    <button data-goto=".feedbac" href="#" class="header__btn-mobile menu__link">Зв'язатись</button>
+                    <h3 class="header__name-web">
+                        КРОПИВНИЦЬКИЙ ДЕРЖАВНИЙ ОБЛАСНИЙ<br>НАВЧАЛЬНО-КУРСОВИЙ КОМБІНАТ
+                    </h3>
+                    <div class="header__phone">
+                        <img src="./image/icon/phone.svg" alt="phone">
+                        <div class="header__number">
+                            <p>(050) 488-8995</p>
+                            <p>(067) 520-4577</p>
+                        </div>
+                    </div>
+                    <h3 class="header__address">
+                        м. Кропивницький,<br>
+                        вул. Автолюбителів, 2
+                    </h3>
+                </div>
+            </div>
+        </header>     
+        <main class="page">
+            <div class="container">
+                <div class="page__btn">
+                    <button data-goto="header" class="page__btn-up menu__link">up</button>
+                </div>
+                <div class="page__main-screen main-screen">
+                    <h1 class="main-screen__title">Отримай водійське<br>посвідчення <sub><br> за 2 місяці</sub> </h1>
+                    <div class="main-screen__wrapper">
+                        <div class="main-screen__item">
+                            <div class="main-screen__button">
+                                <button class="main-screen__btn"></button>
+                                <h3 class="main-screen__text-btn">Записатися на навчання</h3>
+                            </div>
+                        </div>
+                        <div class="main-screen__item">
+                            <img id="img-1" src="./image/content/car.png" alt="Car">
+                            <img id="img-2" src="./image/content/car-mobile.png" alt="car">
+                        </div>
+                    </div>
+                    <div class="main-screen__info">
+                        <div class="main-screen__colum">
+                            <h3>Оновленний <br>автопарк</h3>
+                            <img src="./image/content/icon-car.svg" alt="icon-car">
+                        </div>
+                        <div class="main-screen__colum">
+                            <h3>Досвід роботи <br>більше 15 років</h3>
+                            <img src="./image/content/Certificate.svg" alt="Certificate">
+                        </div>
+                        <div class="main-screen__colum">
+                            <h3>Зручна система <br>оплати </h3>
+                            <img src="./image/content/Calendar.svg" alt="calendar">
+                        </div>
+                    </div>
+                </div>
+                <div class="page__gallery gallery">
+                    <h2 class="gallery__title">вибір категорії</h2>
+                    <div class="gallery__wrapper">
+                       <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                       <label for="tab-btn-1">A</label>
+                       <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                       <label for="tab-btn-2">B</label>
+                       <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+                       <label for="tab-btn-3">C</label>
+                       <div class="gallery__content-1 content">
+                          <div class="content__item">
+                            <img src="./image/content/Group-A.png" alt="Group-B">
+                          </div>
+                          <div class="content__item">
+                            <h4 class="content__subtitle">категорія а</h4>
+                            <ul class="content__list">
+                                <li>Тривалість навчання: 2 місяці</li>
+                                <li>Теоретична частина: 40 годин</li>
+                                <li>Практична частина: 5 занять</li>
+                                <li>1600 грн</li>
+                            </ul>
+                            <button data-goto=".feedbac" class="content__btn menu__link">Записатись</button>
+                          </div>
+                       </div>
+                       <div class="gallery__content-2 content">
+                        <div class="content__item">
+                            <img src="./image/content/Group-B.png" alt="Group-B">
+                          </div>
+                          <div class="content__item">
+                            <h4 class="content__subtitle">категорія в</h4>
+                            <ul class="content__list">
+                                <li>Тривалість навчання: 2 місяці</li>
+                                <li>Теоретична частина: 40 годин</li>
+                                <li>Практична частина: 5 занять</li>
+                                <li>2600 грн</li>
+                            </ul>
+                            <button data-goto=".feedbac" class="content__btn menu__link">Записатись</button>
+                          </div>
+                       </div>
+                       <div class="gallery__content-3 content">
+                        <div class="content__item">
+                            <img src="./image/content/Group-C.png" alt="Group-B">
+                          </div>
+                          <div class="content__item">
+                            <h4 class="content__subtitle">категорія с</h4>
+                            <ul class="content__list">
+                                <li>Тривалість навчання: 2 місяці</li>
+                                <li>Теоретична частина: 40 годин</li>
+                                <li>Практична частина: 7 занять</li>
+                                <li>4600 грн</li>
+                            </ul>
+                            <button data-goto=".feedbac" class="content__btn menu__link">Записатись</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__info info">
+                    <div class="info__title">
+                        <h2>чому ми навчаємо</h2>
+                    </div>
+                    <div class="info__wrapper">
+                        <input type="checkbox" class="read-more-checker" id="read-more-checker">
+                        <div class="info__colum colum__mobile">
+                            <p>У наш час стало дуже престижно водити автомобіль, у зв'язку 
+                                з цим постійно збільшується кількість охочих отримати посвідчення водія і сісти за кермо транспортного засобу. 
+                                У цей період багато потенційних водіїв стикаються 
+                                з проблемою у виборі автошколи, яка могла б надати отримання якісних знань щодо влаштування автомобіля та правил дорожнього руху на професійному рівні. 
+                            </p>
+                            <br>
+                            <p>Основне завдання нашої школи не просто підготувати учня 
+                                до складання іспиту, а й дати можливість здобути навички практичного водіння, які допоможуть йому впевнено сідати 
+                                за кермо власного автомобіля та виїжджати самостійно до міста, безпечно для себе та для оточуючих автовласників.
+                            </p>
+                            <br>
+                            <p>У нас згуртований та дружний колектив висококваліфікованих фахівців:
+                                - викладачі з теорії, які із задоволенням, легко та доступно допоможуть Вам освоїти правила дорожнього руху, 
+                                що є основним та першорядним фактором безпечного руху;
+                                - інструктора, за плечима яких є колосальний особистий досвід безаварійного водіння, під чуйним керівництвом яких Ви зможете застосувати отримані теоретичні знання на уроках практичного водіння.
+                            </p>
+                            <div class="bottom"></div>
+                        </div>
+                        <label for="read-more-checker" class="read-more-button"></label>
+                        <div class="info__colum colum__img">
+                            <img src="./image/content/Best.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="page__stages stages">
+                    <div class="stages__title">
+                        <h2>етапи отримання посвідчення</h2>
+                    </div>
+                    <div class="stages__image">
+                        <img src="./image/content/stages.svg" alt="Stages">
+                    </div>
+                    <div class="stages__image-mobile">
+                            <div class="colum__img-mobile">
+                                <img src="./image/content/color/red.svg" alt="red-point">
+                                <div class="colum__img-subtitle">Підготовка документів</div>
+                            </div>
+                            <div class="colum__img-mobile">
+                                <img src="./image/content/color/yellow.svg" alt="yellow-point">
+                                <div class="colum__img-subtitle">Навчання в автошколі</div>
+                            </div>
+                            <div class="colum__img-mobile">
+                                <img src="./image/content/color/green.svg" alt="green-point">
+                                <div class="colum__img-subtitle">Шкільний іспит</div>
+                            </div>
+                            <div class="colum__img-mobile">
+                                <img src="./image/content/color/blue.svg" alt="blue-point">
+                                <div class="colum__img-subtitle">Іспит у МВС</div>
+                            </div>
+                            <div class="colum__img-mobile">
+                                <img src="./image/content/color/violet.svg" alt="violet-point">
+                                <div class="colum__img-subtitle">Водійське посвідчення твоє!</div>
+                            </div>
+                    </div>
+                </div>
+                <div class="page__faq faq">
+                    <div class="faq__title">
+                        <h2>відповіді на найчастіші запитання</h2>
+                    </div>
+                    <div class="faq__wrapper">
+                        <div class="faq__item">
+                            <div class="faq__cell">
+                                <input class="faq__toggle-box" id="identifier-1" type="checkbox" >
+                                <label for="identifier-1" class="faq__cell-name">Які умови, вартість та терміни навчання ?</label>
+                               <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Voluptas voluptatum aliquam, laudantium illo ullam sequi atque explicabo inventore magnam aut dolorum et asperiores fugiat debitis, 
+                                veritatis impedit animi enim tenetur?
+                              </div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                        <div class="faq__cell">
+                            <input class="faq__toggle-box" id="identifier-2" type="checkbox" >
+                            <label for="identifier-2" class="faq__cell-name">Чи пройшла школа акредитацію ?</label>
+                           <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Vel corrupti iure repellat tenetur consectetur cupiditate laborum deleniti molestiae eveniet, voluptatum vitae cumque accusamus id explicabo quam? 
+                            Praesentium omnis a ipsam?
+                          </div>
+                        </div>
+                        </div>
+                        <div class="faq__item">
+                    <div class="faq__cell">
+                        <input class="faq__toggle-box" id="identifier-3" type="checkbox" >
+                        <label for="identifier-3" class="faq__cell-name">Чи дійсне посвідчення закордоном ?</label>
+                       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nobis recusandae, culpa accusantium harum voluptate nihil modi, eaque aut voluptatum excepturi, eum vel amet? 
+                        Suscipit dolore iste repellendus quisquam accusantium totam.
+                      </div>
+                    </div>
+                        </div>
+                        <div class="faq__item">
+                <div class="faq__cell">
+                    <input class="faq__toggle-box" id="identifier-4" type="checkbox" >
+                    <label for="identifier-4" class="faq__cell-name">Як проходитиме іспит в територіальному сервісному центрі МВС ?</label>
+                   <div>У зазначену дату та час всім учням необхідно прибути до Територіального Сервісного Центру. 
+                    Після прибуття до Сервісного Центру МВС при собі потрібно мати оригінали паспорта, ІПН та 300 грн. (Для оформлення пластику).
+                    Після реєстрації всіх учнів починається теоретичний іспит. Після його складання починається іспит із практичного водіння автомобіля. 
+                    Після успішного складання всіх іспитів протягом 5 робочих днів Ви отримуєте посвідчення водія. 
+                    У разі не складання теоретичного курсу Ви маєте право 1 раз на 5 днів передавати теорію доти, доки не здасте, протягом 10 років. 
+                    У разі не складання практичного курсу, згідно із Законодавством України, Ви маєте право на 3 перездачі. 
+                    І якщо після третьої спроби Вам все ж таки не вдалося здати, то Ви повертаєтеся в автошколу і проходите додатковий курс з водіння (20 год.).
+                  </div>
+                </div>
+                        </div>
+                        <div class="faq__item">
+            <div class="faq__cell">
+                <input class="faq__toggle-box" id="identifier-5" type="checkbox" >
+                <label for="identifier-5" class="faq__cell-name">Скільки коштує навчання на інші категорії прав</label>
+               <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Rem quas asperiores velit reiciendis ullam consectetur expedita. 
+                Recusandae dolor, perspiciatis consectetur voluptatem, temporibus ipsam et deleniti, dolores atque vel quaerat ex!
+               </div>
+            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__reviews reviews">
+                        <div class="reviews__title">відгуки від наших учнів</div>
+                        <div class="reviews__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="reviews__slide swiper-slide">
+                                    <div class="reviews__user">
+                                        <div class="reviews__img">
+                                            <img src="./image/icon/user.png" alt="user">
+                                        </div>
+                                        <div class="reviews__client">
+                                            Марк Вольцев
+                                            <br>
+                                            <span>Ученик</span>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__box">
+                                        <div class="reviews__quotes">
+                                            <img src="./image/icon/Quote.svg" alt="quotes">
+                                        </div>
+                                        <div class="reviews__text">
+                                            Я бы хотел поделиться своим отзывом об инструкторе, который меня обучал в автошколе. 
+                                            Я был очень доволен его работой и профессионализмом.
+                                            Первое, что мне понравилось в инструкторе, это то, что он был очень терпеливым и дружелюбным. 
+                                            Он понимал, что вождение может быть очень стрессовым и напряженным для новичков и всегда старался создавать расслабленную и дружественную атмосферу во время занятий. 
+                                            Он также был очень внимательным и заботливым, всегда готовым ответить на мои вопросы и объяснить любые непонятные моменты.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__slide swiper-slide">
+                                    <div class="reviews__user">
+                                        <div class="reviews__img">
+                                            <img src="./image/icon/user.png" alt="user">
+                                        </div>
+                                        <div class="reviews__client">
+                                            Марк Вольцев
+                                            <br>
+                                            <span>Ученик</span>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__box">
+                                        <div class="reviews__quotes">
+                                            <img src="./image/icon/Quote.svg" alt="quotes">
+                                        </div>
+                                        <div class="reviews__text">
+                                            Я бы хотел поделиться своим отзывом об инструкторе, который меня обучал в автошколе. 
+                                            Я был очень доволен его работой и профессионализмом.
+                                            Первое, что мне понравилось в инструкторе, это то, что он был очень терпеливым и дружелюбным. 
+                                            Он понимал, что вождение может быть очень стрессовым и напряженным для новичков и всегда старался создавать расслабленную и дружественную атмосферу во время занятий. 
+                                            Он также был очень внимательным и заботливым, всегда готовым ответить на мои вопросы и объяснить любые непонятные моменты.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__slide swiper-slide">
+                                    <div class="reviews__user">
+                                        <div class="reviews__img">
+                                            <img src="./image/icon/user.png" alt="user">
+                                        </div>
+                                        <div class="reviews__client">
+                                            Марк Вольцев
+                                            <br>
+                                            <span>Ученик</span>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__box">
+                                        <div class="reviews__quotes">
+                                            <img src="./image/icon/Quote.svg" alt="quotes">
+                                        </div>
+                                        <div class="reviews__text">
+                                            Я бы хотел поделиться своим отзывом об инструкторе, который меня обучал в автошколе. 
+                                            Я был очень доволен его работой и профессионализмом.
+                                            Первое, что мне понравилось в инструкторе, это то, что он был очень терпеливым и дружелюбным. 
+                                            Он понимал, что вождение может быть очень стрессовым и напряженным для новичков и всегда старался создавать расслабленную и дружественную атмосферу во время занятий. 
+                                            Он также был очень внимательным и заботливым, всегда готовым ответить на мои вопросы и объяснить любые непонятные моменты.
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="swiper-pagination reviews__pagination"></div>
+                        </div> 
+                </div>
+                <div class="page__feedback feedbac">
+                    <div class="feedback__wrapper">
+                        <div class="feedback__maps">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4426.850149463622!2d21.25705565936246!3d48.720371595940335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ee065694a37b5%3A0x1a6c8a2f5126db2b!2z0KHQvtCx0L7RgCDQodCy0Y_RgtC-0Lkg0JXQu9C40LfQsNCy0LXRgtGLINCS0LXQvdCz0LXRgNGB0LrQvtC5!5e0!3m2!1sru!2sfr!4v1679926548784!5m2!1sru!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="feedback__form form">
+                            <div class="form__title">Зв`язатися з нами</div>
+                            <form class="form__bun" name="feedback" method="POST" action="#">
+                              <input type="text" name="name" placeholder="Ваше имя" required="required">
+                              <input type="email" name="email" placeholder="Email" required="required">
+                              <input type="number" name="number_tel" placeholder="Номер телефона" required="required">
+                              <textarea name="message" placeholder="Ваше питання"></textarea>
+                              <button type="submit" name="feedbac" class="form__btn" >Замовити дзвінок</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__item footer__item-menu">
+                        <div class="footer__colum">
+                        <a data-goto=".gallery" href="#" class="menu__link">Ціни та категорії</a>
+                        <a data-goto=".stages" href="#" class="menu__link">Етапи отримання</a>
+                        <a data-goto=".faq" href="#" class="menu__link">FAQ</a>
+                    </div>
+                    <div class="footer__colum">
+                        <a data-goto=".reviews" href="#" class="menu__link">Відгуки</a>
+                        <a data-goto=".feedbac" href="#" class="menu__link">Контакти</a>
+                    </div>
+                    </div>
+                    <div class="footer__item footer__item-nunmber">
+                        <ul>
+                            <li>(050)488-8995</li>
+                            <li>(067)520-4577</li>
+                            <li>(0522)55-72-21</li>
+                        </ul>
+                    </div>
+                    <div class="footer__item footer__item-addres">
+                        м. Кропивницький<br>
+                        вул. Автолюбителів, 2
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
